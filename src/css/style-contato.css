@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    /* Diferente do abslute, ele não fica totalmente solto, ele se ajusta de acordo com minha caixa criada. (PENSE COMO TODOS OS ELEMENTOS) */
+    width: 940px;
+    /* Defini um tamanho padrão para essa caixa */
+    margin: 0 auto;
+    /* Defini que a distancia de margem  "autura" é 0, e a "direta e esquerda" vai se calcular automaticamente, causando assim o alinhamento. */
+}
+
+nav {
+    position: absolute;
+    /* Meu texto fica solto, se tornando manipulavel (Seu movimento claro) */
+    top: 110px;
+    /* Distancia do TOPO */
+    right: 0;
+    /* Distancia da esquerda */
+}
+
+nav li {
+    display: inline;
+    /* Utilizado para conseguirmos colocar o texto do lado da imagem */
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    /* Deixa maiuscula */
+    color: #000000;
+    /* Deixar cinza */
+    font-weight: bold;
+    /*Tipo um negrito */
+    font-size: 22px;
+    /* Tamanho da fonte */
+    text-decoration: none;
+    /* Remover decoracao */
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: url("../images/bg.jpg");
+}
+
+.copyright {
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 45px 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+table {
+    margin: 15px 0 25px 0;
+}
+
+thead {
+    background: #CCCCCC;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px 5px;
+}
